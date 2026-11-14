@@ -1,6 +1,6 @@
 {
-  "name": "Your Podcast Name",
-  "short_name": "Your Podcast",
+  "name": "One More Thing.",
+  "short_name": "One More Thing",
   "description": "A short line about what your show is about.",
   "start_url": "./",
   "scope": "./",

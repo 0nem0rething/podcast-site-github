@@ -1,14 +1,15 @@
 {
-  "name": "Your Podcast Name",
-  "tagline": "A short line about what your show is about.",
+  "name": "One More Thing.",
+  "tagline": "You might find it useful. ",
   "description": "A short line about what your show is about.",
-  "about": "Write a few sentences about your show here. Who hosts it, what it covers and how often new episodes arrive.\n\nSecond paragraphs are supported too.",
+  "about": "Just two guys, talking about the crazy world of technology that we live in. Hosted by Munro and Thomas, two people who want to hopefully further your technological understanding, skill, efficiency and ability. This podcast discusses topics like tech news, how technology works and a bit of tech history(sometimes).",
   "logo": "icons/logo.png",
   "shareImage": "share.jpg",
   "siteUrl": "",
   "r2BaseUrl": "",
+  "audioHosting": "repo",
   "theme": {
-    "accent": "#c8401c",
+    "accent": "#f13f3d",
     "background": "#f6f6f3",
     "text": "#111111",
     "backgroundDark": "#121212",
@@ -31,9 +32,9 @@
     "hint": true
   },
   "homeScreen": {
-    "appName": "Your Podcast",
+    "appName": "One More Thing",
     "icon": "icons/icon-512.png",
-    "iconBackground": "#c8401c",
+    "iconBackground": "#f13f3d",
     "showHint": true,
     "hintText": "Tap Share, then Add to Home Screen, to open the show like an app. Episodes keep playing when your phone is locked."
   }
