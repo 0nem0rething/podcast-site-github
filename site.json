@@ -1,0 +1,40 @@
+{
+  "name": "Your Podcast Name",
+  "tagline": "A short line about what your show is about.",
+  "description": "A short line about what your show is about.",
+  "about": "Write a few sentences about your show here. Who hosts it, what it covers and how often new episodes arrive.\n\nSecond paragraphs are supported too.",
+  "logo": "icons/logo.png",
+  "shareImage": "share.jpg",
+  "siteUrl": "",
+  "r2BaseUrl": "",
+  "theme": {
+    "accent": "#c8401c",
+    "background": "#f6f6f3",
+    "text": "#111111",
+    "backgroundDark": "#121212",
+    "textDark": "#efede8",
+    "headingFont": "inter",
+    "bodyFont": "inter",
+    "defaultMode": "system"
+  },
+  "layout": "list",
+  "order": "newest",
+  "autoplayNext": "older",
+  "lockScreenTrackButtons": true,
+  "sections": {
+    "about": true,
+    "logo": true,
+    "tagline": true,
+    "descriptions": true,
+    "episodeNumbers": true,
+    "themeToggle": true,
+    "hint": true
+  },
+  "homeScreen": {
+    "appName": "Your Podcast",
+    "icon": "icons/icon-512.png",
+    "iconBackground": "#c8401c",
+    "showHint": true,
+    "hintText": "Tap Share, then Add to Home Screen, to open the show like an app. Episodes keep playing when your phone is locked."
+  }
+}

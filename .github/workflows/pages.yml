@@ -1,0 +1,48 @@
+# Deploys the public site to GitHub Pages on every push to main.
+# Only the files listed below are published. manager.html, site.zip, README.md
+# and everything else in the repo stay private.
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Collect public files only
+        run: |
+          mkdir _site
+          for f in index.html style.css app.js sw.js site.json episodes.json manifest.webmanifest share.*; do
+            [ -e "$f" ] && cp "$f" _site/
+          done
+          for d in icons covers fonts audio; do
+            [ -d "$d" ] && cp -r "$d" _site/
+          done
+          touch _site/.nojekyll
+          test -f _site/index.html || { echo "index.html missing"; exit 1; }
+          test ! -e _site/manager.html
+          du -sh _site
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

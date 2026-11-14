@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ep3-sample",
+    "number": 3,
+    "title": "Episode three: replace me with a real one",
+    "date": "2026-10-14",
+    "description": "This is a placeholder episode with a short test tone so you can try the player, speed control, lock screen controls and position memory. Delete it in the manager once you add your own episodes.",
+    "duration": 18,
+    "coverPath": "covers/ep3-placeholder.jpg",
+    "audioUrl": "audio/003-sample.mp3"
+  },
+  {
+    "id": "ep2-sample",
+    "number": 2,
+    "title": "Episode two: another placeholder",
+    "date": "2026-10-07",
+    "description": "This is a placeholder episode with a short test tone so you can try the player, speed control, lock screen controls and position memory. Delete it in the manager once you add your own episodes.",
+    "duration": 24,
+    "coverPath": "covers/ep2-placeholder.jpg",
+    "audioUrl": "audio/002-sample.mp3"
+  },
+  {
+    "id": "ep1-sample",
+    "number": 1,
+    "title": "Hello world: the first placeholder episode",
+    "date": "2026-09-30",
+    "description": "This is a placeholder episode with a short test tone so you can try the player, speed control, lock screen controls and position memory. Delete it in the manager once you add your own episodes.",
+    "duration": 30,
+    "coverPath": "covers/ep1-placeholder.jpg",
+    "audioUrl": "audio/001-sample.mp3"
+  }
+]
