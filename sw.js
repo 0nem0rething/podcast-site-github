@@ -1,5 +1,5 @@
 /* Service worker: caches the app shell only. Audio is NEVER intercepted or cached. */
-const VERSION = 'vmwg4ywgb';
+const VERSION = 'vmwg7imnj';
 const CACHE = 'podcast-shell-' + VERSION;
 const SHELL = [
   './', 'index.html', 'style.css', 'app.js', 'site.json', 'episodes.json', 'manifest.webmanifest',
